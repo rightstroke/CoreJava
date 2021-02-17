@@ -6,6 +6,9 @@ public class JavaCompare {
 		String s1 = "A";
 		String s2 = "A";
 		
+		System.out.println(s1.hashCode());
+		System.out.println("A".hashCode());
+		
 		int a = 10;
 		
 		if (a==10) {
