@@ -91,17 +91,17 @@ class SortByTxnRefNumber implements Comparator<Payment> {
 	
 }
 
-class SortByTxnRefNumberThenAmount implements Comparator<Payment> {
-
-	@Override
-	public int compare(Payment obj1, Payment obj2) {
-	
-		if (obj1.getTxnRefNumber().compareTo(obj2.getTxnRefNumber()) > 0) {
-			return obj1.getTxnRefNumber().compareTo(obj2.getTxnRefNumber());
-		} else {
-			return obj2.getTxnRefNumber().compareTo(obj1.getTxnRefNumber());
-		}
-		
-	}
+//class SortByTxnRefNumberThenAmount implements Comparator<Payment> {
+//
+//	@Override
+//	public int compare(Payment obj1, Payment obj2) {
+//	
+//		if (obj1.getTxnRefNumber().compareTo(obj2.getTxnRefNumber()) > 0) {
+//			return obj1.getTxnRefNumber().compareTo(obj2.getTxnRefNumber());
+//		} else {
+//			return obj2.getTxnRefNumber().compareTo(obj1.getTxnRefNumber());
+//		}
+//		
+//	}
 	
 }
