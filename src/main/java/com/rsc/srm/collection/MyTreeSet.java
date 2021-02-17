@@ -44,7 +44,9 @@ public class MyTreeSet {
 	public void doPaymentSorting()  {
 		//Set myPaySet = new TreeSet(new SortByAmount());
 		
-		Set myPaySet = new TreeSet(new SortByTxnRefNumber());
+		//Set myPaySet = new TreeSet(new SortByTxnRefNumber());
+		
+		Set myPaySet = new TreeSet(new SortByTxnRefNumber().thenComparing(new SortByAmount()));
 		myPaySet.add(new Payment(1, "ABCD1232323", 9000));
 		myPaySet.add(new Payment(2, "ZBCD1232323", 4000));
 		myPaySet.add(new Payment(3, "XBCD1232323", 5000));
