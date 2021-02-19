@@ -1,5 +1,7 @@
 package com.rsc.srm.model;
 
+//public class Patient extends BaseModel implements Comparable<Patient>{
+	
 public class Patient extends BaseModel {
 	
 	public Patient(String patientID, String country, String state) {
@@ -80,6 +82,12 @@ public class Patient extends BaseModel {
 			return false;
 		return true;
 	}
+
+//	@Override
+//	public int compareTo(Patient o) {
+//		// TODO Auto-generated method stub
+//		return this.getCountry().compareTo(o.getCountry());
+//	}
 	
 	
 }

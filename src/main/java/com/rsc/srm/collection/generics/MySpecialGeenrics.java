@@ -33,6 +33,21 @@ class IPhone implements SwitchControls {
 	}
 }
 
+class Android extends IPhone implements SwitchControls {
+
+	@Override
+	public void on() {
+		System.out.println(":::ON:::");
+		
+	}
+
+	@Override
+	public void off() {
+		System.out.println(":::OFF:::");
+		
+	}
+}
+
 class SpecialBound<T extends IPhone & SwitchControls> {
 	T obj;
 	
